@@ -5,19 +5,19 @@
 # 3.   Handles errors gracefully if the file does not exist.
 
 
-# def openFile():
-#     try:
-#         with open('sample.txt', 'w') as sampleTextFile:
-#             sampleTextFile.write('This is the sample text file\nIt contains multiple lines')
+def openFile():
+    try:
+        with open('sample.txt', 'w') as sampleTextFile:
+            sampleTextFile.write('This is the sample text file\nIt contains multiple lines')
     
-#         with open('sample.txt', 'r+') as sampleTextFile:
-#             print(sampleTextFile.read())    
+        with open('sample.txt', 'r+') as sampleTextFile:
+            print(sampleTextFile.read())    
             
-#     except FileNotFoundError:
-#         print("The file 'sample.txt' was not found")
+    except FileNotFoundError:
+        print("The file 'sample.txt' was not found")
 
 
-# openFile()
+openFile()
 
 
 # Task 2: Write and Append Data to a File
