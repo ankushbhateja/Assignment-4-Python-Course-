@@ -32,19 +32,19 @@ enteredData = input("Enter text to write to the file : ")
 
 def writeData():
     try:
-        with open("output.txt",'w') as outputTextFile:
+        with open("sample.txt",'w') as outputTextFile:
             outputTextFile.write(enteredData + '\n')
-            print("Data successfully written to output.txt")
-        appendData= input("Enter additional to add in output.txt : ")
-        with open("output.txt",'a') as outputTextFile:
+            print("Data successfully written to sample.txt")
+        appendData= input("Enter additional to add in sample.txt : ")
+        with open("sample.txt",'a') as outputTextFile:
             outputTextFile.write(appendData)
         print("Data successfully appended")
         
-        print("Final content of output.txt")
-        with open("output.txt",'r') as outputTextFile:
+        print("Final content of sample.txt")
+        with open("sample.txt",'r') as outputTextFile:
            print(outputTextFile.read())
     except FileNotFoundError:
-        print("output.txt not found")
+        print("sample.txt not found")
 
 
 writeData()
